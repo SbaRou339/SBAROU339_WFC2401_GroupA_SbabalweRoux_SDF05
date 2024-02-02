@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+}
+
+.image-wrapper {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url("main.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	animation-name: growpic;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.title {
+	font-size: 4em;
+	text-transform: uppercase;
+	margin: 0;
+	font-family: Sen;
+	text-transform: uppercase;
+	text-align: center;
+
+	animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
+
+@keyframes growpic {
+	0% {
+		opacity: 0%; 
+		width: 0%;
+	}
+	100% {
+		opacity: 100%; 
+		width: 100%;
+	}
+}
+
+@keyframes fade-in {
+    0% {
+		opacity: 0%;
+	}
+    100% {
+		opacity: 100%;
+	}
+}
+
+
+
+
+/* Animation Challenge
+-------------------
+
+Your task is to create two animations that will first 
+cause the background to fade in and expand in width from 
+left to right, then fade in the text in the center. The 
+first animation should take 1.5 seconds, followed by a 
+0.5 second delay, and finally, 1 second for the text 
+fade-in. Both animations should have an ease-out timing 
+function and run once. All styles should be retained once 
+the animation ends. Good luck! */

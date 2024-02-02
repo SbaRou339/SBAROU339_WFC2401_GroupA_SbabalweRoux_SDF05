@@ -1,0 +1,87 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f0d9e6;
+}
+
+.menu {
+	margin: 0;
+	width: 100%;
+	padding: 5px;
+	background: #bdceff;
+	min-height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	border-bottom: 3px solid #005aad;
+	border-radius: 50px;
+	flex-wrap: wrap;
+}
+
+.menu-link {
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-family: Roboto, sans-serif;
+	color: black;
+    transition: all 1s ease-out;
+}
+
+.menu-link:hover { 
+    color: #1f93ff;
+    font-size: 2.5em;
+}
+
+
+.menu-item {
+	height: 3em;
+	align-self: center;
+	margin: 5px;
+}
+
+
+.title-wrapper {
+	margin: 0;
+	background: #bdceff;
+	border-bottom: 3px solid #005aad;
+	border-radius: 50px;
+	padding: 10px;
+}
+
+.title {
+	margin: 0;
+	width: 100%;
+	font-weight: 800;
+	font-family: Roboto, sans-serif;
+	color: black;
+	text-transform: uppercase;
+	font-size: 4em;
+	text-align: center;
+    transition: color 1s ease-out;
+}
+
+.title:hover {
+    color: #1f93ff;
+}
+
+.image {
+	width: 100%;
+	opacity: 1;
+	transition: transform .5s;
+}
+
+.image:hover {
+	opacity: 0.;
+	transform: scale(1.05);
+}
+
+/* Transitions Challenge
+---------------------
+
+The goal of this challenge is to add two transitions to the website; one to the title to change its color to #1f93ff on hover, and another to the menu items to make them grow to 2.5em *and* change color to #1f93ff on hover. Transitions will be added from the ground up, including pseudoselectors and the transitions themselves. All transitions need to have a duration of 1 second and use the ease-out timing function. Good luck! 
+
+transition: all 1s eas-out;
+
+*/

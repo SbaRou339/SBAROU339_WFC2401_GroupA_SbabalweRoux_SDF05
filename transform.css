@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	background: #242423;
+
+    animation: changeBack 3s ease-in-out 1s infinite alternate both;
+}
+
+.word {
+    text-align: center;
+
+    color: #ffaf24;
+
+    animation-name: words;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.box {
+	height: 30px;
+	width: 30px;
+
+    animation: transform 3s ease-in-out 1s infinite alternate both;
+}
+
+.box-red {
+	background: #ff4d4d;
+    margin: 0;
+}
+
+.box-blue {
+	background: #738cff;
+    margin: 0;
+}
+
+.box-green {
+	background: #46ff36;
+    margin: 0;
+}
+
+.box-orange {
+	background: #ffaf24;
+    margin: 0;
+}
+
+@keyframes transform {
+    to {transform: translate(50vw, 50vh) scaleX(10) skewY(60deg);}
+}
+@keyframes changeBack {
+    0%{ background: #242423;}
+    25%{ background: rgb(66, 43, 43);}
+    75%{ background: rgb(45, 45, 73);}
+    100%{ background: rgb(45, 77, 45);}
+}
+
+@keyframes words {
+    from{ opacity: 0; }
+    to{ Opacity: 1; }
+}
